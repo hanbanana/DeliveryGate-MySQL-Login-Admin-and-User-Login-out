@@ -1,5 +1,14 @@
 # DeliveryGate-MySQL-Login-Admin-and-User-Login-out
 
+Delivery Gate Application is a internal delivery order system. The core concept is a simple application that can quickly add delivery information.   
+
+## Technologies Used
+HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, MySQL, NPM, Node.js
+
+### Delivery Order Information Function
+
+* Create
+* Edit
 
 ## To Install
 
@@ -10,14 +19,33 @@
 
 ## To Login
 
-* Customer Login
+* Customer Login (Only see delivery order history)
 
    - ID: user1
 
    - PW: user1
 
-* Admin Login
+* Admin Login (Create and Edit delivery order)
 
    - ID: admin1
 
    - PW: admin1
+
+### Screenshot
+* Login Page
+![Initial Customer](./views/images/loginPage.PNG)
+
+* Admin Main Page
+![Initial Customer](./views/images/adminMainPage.PNG)
+
+* Admin Edit Page
+![Initial Customer](./views/images/adminEditPage.PNG)
+
+* Admin Create Page
+![Initial Customer](./views/images/adminCreatePage.PNG)
+
+* Customer Main Page
+![Initial Customer](./views/images/customerMainPage.PNG)
+
+* Customer Contact Page
+![Initial Customer](./views/images/customerContactPage.PNG)
