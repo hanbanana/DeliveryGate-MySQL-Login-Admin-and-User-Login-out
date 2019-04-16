@@ -12,12 +12,12 @@
 
 * Customer Login
 
-- ID: user1
+   - ID: user1
 
-- PW: user1
+   - PW: user1
 
 * Admin Login
 
-- ID: admin1
+   - ID: admin1
 
-- PW: admin1
+   - PW: admin1
