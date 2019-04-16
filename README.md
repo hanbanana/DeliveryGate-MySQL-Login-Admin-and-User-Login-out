@@ -32,7 +32,7 @@ HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, MySQL, NPM, Node.js
    - PW: admin1
 
 ## Screenshot
-* Login Page
+- Login Page
 ![Initial Customer](./views/images/loginPage.PNG)
 
 * Admin Main Page
