@@ -33,6 +33,7 @@ HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, MySQL, NPM, Node.js
 
 ## Screenshot
 * Login Page
+
 ![Initial Customer](./views/images/loginPage.PNG)
 
 * Admin Main Page
