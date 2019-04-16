@@ -33,8 +33,9 @@ HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, MySQL, NPM, Node.js
 
 ## Screenshot
 * Login Page
-
-![Initial Customer](./views/images/loginPage.PNG)
+<p align="center">
+  <img width="460" height="300" src="./views/images/loginPage.PNG">
+</p>
 
 * Admin Main Page
 ![Initial Customer](./views/images/adminMainPage.PNG)
