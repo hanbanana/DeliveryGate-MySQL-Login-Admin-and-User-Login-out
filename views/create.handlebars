@@ -1,0 +1,226 @@
+<div style="margin-left: 200px; margin-right: 200px">
+  <div class="indexNav">
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link" href="/deliveryorder">Home</a>
+      </li>
+      {{!-- <li class="nav-item">
+        <a class="nav-link" href="/create">Create_New</a>
+      </li> --}}
+      {{!-- <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact</a>
+      </li> --}}
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">Log_Out</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<div style="margin-left: 200px; margin-right: 200px; font-size: 13px">
+  <h2>Create</h2>
+  <br>
+
+  {{!-- Vertical Input Form
+  <form id="createplan">
+    <div class="form-group row form-horizontal">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">BL</label>
+      <div class="col-sm-10">
+        <input class="form-control form-control-sm" placeholder="BL" name="BL" id="BL">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Terminal Name</label>
+      <div class="col-sm-10">
+        <input class="form-control form-control-sm" placeholder="Terminal Name" name="Terminal_Name" id="Terminal_Name">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Container No.</label>
+      <div class="col-sm-10">
+        <input class="form-control form-control-sm" placeholder="Container No." name="Container_No" id="Container_No">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Vasse No.</label>
+      <div class="col-sm-10">
+        <input class="form-control form-control-sm" placeholder="Vassel No." name="Vassel_No" id="Vassel_No">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">ETA</label>
+      <div class="col-sm-10">
+        <input type="date" class="form-control form-control-sm" placeholder="ETA" name="ETA" id="ETA">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Weight(kg)</label>
+      <div class="col-sm-10">
+        <input type="number" step="0.001" name="amount" placeholder="0.000" class="form-control form-control-sm"
+          name="Weight" id="Weight">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Seal No.</label>
+      <div class="col-sm-10">
+        <input class="form-control form-control-sm" placeholder="Seal No." name="Seal_No" id="Seal_No">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Delivery Location</label>
+      <div class="col-sm-10">
+        <input class="form-control form-control-sm" placeholder="Delivery Location" name="Delivery_Location"
+          id="Delivery_Location">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Status</label>
+      <div class="col-sm-10">
+        <select class="form-control form-control-sm" name="Status_" id="Status_">
+          <option selected>Choose...</option>
+          <option>Done</option>
+          <option>Pending</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Return</label>
+      <div class="col-sm-10">
+        <select class="form-control form-control-sm" name="Return_" id="Return_">
+          <option selected>Choose...</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Close</label>
+      <div class="col-sm-10">
+        <select class="form-control form-control-sm" name="Close_" id="Close_">
+          <option selected>Choose...</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-secondary pull-right" style="display: block; margin: 0 auto;">Save</button>
+  </form> --}}
+
+
+
+
+
+
+  {{!-- On One Line Form- --}}
+  <div class="formDiv">
+    <form id="createplan">
+      <div class="form-group-sm row">
+        <div class="col-sm">
+          <label for="ex1">B/L</label>
+          <input class="form-control form-control-sm" placeholder="BL" name="BL" id="BL" required style="text-transform: uppercase">
+        </div>
+        <div class="col">
+          <label for="ex2">Terminal Name</label>
+          <input class="form-control form-control-sm" placeholder="Terminal Name" name="Terminal_Name"
+            id="Terminal_Name" required style="text-transform: uppercase">
+        </div>
+        <div class="col">
+          <label for="ex3">Container No.</label>
+          <input class="form-control form-control-sm" placeholder="Container No." name="Container_No" id="Container_No" required style="text-transform: uppercase">
+        </div>
+        <div class="col">
+          <label for="ex1">Vassel No.</label>
+          <input class="form-control form-control-sm" placeholder="Vassel No." name="Vassel_No" id="Vassel_No" required style="text-transform: uppercase">
+        </div>
+        <div class="col">
+          <label for="ex2">ETA</label>
+          <input type="date" class="form-control form-control-sm" placeholder="ETA" name="ETA" id="ETA" required style="text-transform: uppercase">
+        </div>
+        <div class="col">
+          <label for="ex3">Weight(kg)</label>
+          <input type="number" step="0.001" name="amount" placeholder="0.000" class="form-control form-control-sm"
+            name="Weight" id="Weight" required style="text-transform: uppercase">
+        </div>
+        <div class="col">
+          <label for="ex1">Seal No.</label>
+          <input class="form-control form-control-sm" placeholder="Seal No." name="Seal_No" id="Seal_No" required style="text-transform: uppercase">
+        </div>
+        <div class="col">
+          <label for="ex2">Delivery Location</label>
+          <input class="form-control form-control-sm" placeholder="Delivery Location" name="Delivery_Location"
+            id="Delivery_Location" required style="text-transform: uppercase">
+        </div>
+              <div class="col">
+        <label for="ex3">Status</label>
+        <select class="form-control form-control-sm" name="Status_" id="Status_" required style="text-transform: uppercase">
+          <option value="" disabled selected>Choose...</option>
+          <option>Done</option>
+          <option>Pending</option>
+        </select>
+      </div>
+
+        <div class="col">
+          <label for="ex1">Return</label>
+          <select class="form-control form-control-sm" name="Return_" id="Return_" required style="text-transform: uppercase">
+            <option value="" disabled selected>Choose...</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+        <div class="col">
+          <label for="ex2">Close</label>
+          <select class="form-control form-control-sm" name="Close_" id="Close_" required style="text-transform: uppercase">
+            <option value="" disabled selected>Choose...</option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-secondary btn-sm" style="margin-top: 25px">Save</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+<br>
+
+<script type="text/javascript">
+
+  $( function() {
+    $( "#ETA" ).datepicker();
+  } );
+
+  $("#createplan").on("submit", function (event) {
+    // Make sure to preventDefault on a submit event.
+    event.preventDefault();
+
+    var newPlan = {
+      BL: $("#BL").val().trim(),
+      Terminal_Name: $("#Terminal_Name").val().trim(),
+      Container_No: $("#Container_No").val().trim(),
+      Vassel_No: $("#Vassel_No").val().trim(),
+      ETA: $("#ETA").val().trim(),
+      Weight: $("#Weight").val().trim(),
+      Seal_No: $("#Seal_No").val().trim(),
+      Delivery_Location: $("#Delivery_Location").val().trim(),
+      Status_: $("#Status_").val().trim(),
+      Return_: $("#Return_").val().trim(),
+      Close_: $("#Close_").val().trim(),
+
+    };
+
+    // Send the POST request.
+    $.ajax("/todos", {
+      type: "POST",
+      data: newPlan
+    }).then(
+      function () {
+        console.log("created new plan");
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
+  });
+
+</script>

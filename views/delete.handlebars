@@ -1,0 +1,161 @@
+<div style="margin-left: 200px; margin-right: 200px">
+    <div class="indexNav">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Previous</a>
+            </li>
+
+            {{!-- <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact</a>
+            </li> --}}
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <h2>Delete</h2>
+
+    <br>
+
+
+    <form data-id="{{this.id}}" class="update-form">
+
+            <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Are you sure you want delete this?</label>
+            <div class="col-sm-10">
+                <select class="form-control form-control-sm" name="Delete_" id="Delete_" value="{{this.Delete_}}">
+                    <option selected>{{this.Delete_}}</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row form-horizontal">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">BL</label>
+            <div class="col-sm-10">
+                <input class="form-control form-control-sm" placeholder="BL" name="BL" id="BL" value="{{this.BL}}">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Terminal Name</label>
+            <div class="col-sm-10">
+                <input class="form-control form-control-sm" placeholder="Terminal Name" name="Terminal_Name"
+                    id="Terminal_Name" value="{{this.Terminal_Name}}">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Container No.</label>
+            <div class="col-sm-10">
+                <input class="form-control form-control-sm" placeholder="Container No." name="Container_No"
+                    id="Container_No" value="{{this.Container_No}}">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Vasse No.</label>
+            <div class="col-sm-10">
+                <input class="form-control form-control-sm" placeholder="Vassel No." name="Vassel_No" id="Vassel_No"
+                    value="{{this.Vassel_No}}">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">ETA</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control form-control-sm" placeholder="{{this.ETA}}" name="ETA" id="ETA"
+                    value="{{this.ETA}}">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Weight(kg)</label>
+            <div class="col-sm-10">
+                <input type="number" step="0.001" name="amount" placeholder="0.000" class="form-control form-control-sm"
+                    name="Weight" id="Weight" value="{{this.Weight}}">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Seal No.</label>
+            <div class="col-sm-10">
+                <input class="form-control form-control-sm" placeholder="Seal No." name="Seal_No" id="Seal_No"
+                    value="{{this.Seal_No}}">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Delivery Location</label>
+            <div class="col-sm-10">
+                <input class="form-control form-control-sm" placeholder="Delivery Location" name="Delivery_Location"
+                    id="Delivery_Location" value="{{this.Delivery_Location}}">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Status</label>
+            <div class="col-sm-10">
+                <select class="form-control form-control-sm" name="Status_" id="Status_" value="{{this.Status_}}">
+                    <option selected>{{this.Status_}}</option>
+                    <option>Done</option>
+                    <option>Pending</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Return</label>
+            <div class="col-sm-10">
+                <select class="form-control form-control-sm" name="Return_" id="Return_" value="{{this.Return_}}">
+                    <option selected>{{this.Return_}}</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Close</label>
+            <div class="col-sm-10">
+                <select class="form-control form-control-sm" name="Close_" id="Close_" value="{{this.Close_}}">
+                    <option selected>{{this.Close_}}</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-secondary pull-right" style="display: block; margin: 0 auto;">Save</button>
+    </form>
+</div>
+
+<script type="text/javascript">
+
+    $(".update-form").on("submit", function (event) {
+        // Make sure to preventDefault on a submit event.
+        event.preventDefault();
+
+
+        var updatedPlan = {
+            BL: $("#BL").val().trim(),
+            Terminal_Name: $("#Terminal_Name").val().trim(),
+            Container_No: $("#Container_No").val().trim(),
+            Vassel_No: $("#Vassel_No").val().trim(),
+            ETA: $("#ETA").val().trim(),
+            Weight: $("#Weight").val().trim(),
+            Seal_No: $("#Seal_No").val().trim(),
+            Delivery_Location: $("#Delivery_Location").val().trim(),
+            Status_: $("#Status_").val().trim(),
+            Return_: $("#Return_").val().trim(),
+            Close_: $("#Close_").val().trim()
+        };
+
+        var id = $(this).data("id");
+        // Send the PUT request.
+        $.ajax("/todos/" + id, {
+            type: "PUT",
+            data: updatedPlan
+        }).then(
+            function () {
+                console.log("updated!");
+                // Reload the page to get the updated list
+                location.assign("/");
+            }
+        );
+    });
+
+</script>

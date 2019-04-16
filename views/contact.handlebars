@@ -1,0 +1,86 @@
+<div style="margin-left: 200px; margin-right: 200px">
+  <div class="indexNav">
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link" href="/customer">Main</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<br>
+<div id="contact" class="container-fluid bg-grey">
+  <h3 class="text-center">CONTACT</h3>
+  <br>
+  <div class="row text-center">
+    <div class="col-sm">
+      <p><i class="fas fa-home"></i> Long Beach, CA US</p>
+      <p><i class="fas fa-phone"></i> +00 1515151515</p>
+      <p><i class="fas fa-envelope-square"></i> company@example.com</p>
+    </div>
+
+    {{!-- <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div> --}}
+
+  </div>
+
+{{!-- Adding Google Map 
+/ Refer: https://developers.google.com/maps/documentation/javascript/adding-a-google-map
+
+  <div class="googleMap">
+    <style>
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
+
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+  </div> --}}
+
+
+
+</div>
+<br>
+
+{{!-- Adding Goold Maps Script 
+<script>
+  // Initialize and add the map
+  function initMap() {
+    // The location of Uluru
+    var uluru = { lat: -25.344, lng: 131.036 };
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+      document.getElementById('map'), { zoom: 4, center: uluru });
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({ position: uluru, map: map });
+  }
+</script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=,<YOUR API KEY HERE>&callback=initMap">
+  </script> --}}
+
+
+  

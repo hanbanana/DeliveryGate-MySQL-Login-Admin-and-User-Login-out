@@ -1,0 +1,214 @@
+<div style="margin-left: 200px; margin-right: 200px">
+  <div class="indexNav">
+    <ul class="nav justify-content-end">
+      {{!-- <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact</a>
+      </li> --}}
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">Log_Out</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<div style="margin-left: 200px; margin-right: 200px; font-size: 13px">
+ <a href="/create" style="font-size: 20px">Create New</a>
+ <br><br>
+    <label class="heading">Delivery Order History</label>
+
+    <div class="form-group">
+      <fieldset>
+        <form action="" class="form-group">
+
+          <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                {{!-- <th scope="col" data-sortable="true">ID#</th> --}}
+                <th scope="col">B/L</th>
+                <th scope="col">Terminal_Name</th>
+                <th scope="col">Container_No.</th>
+                <th scope="col">Vassel_No.</th>
+                <th scope="col">ETA</th>
+                <th scope="col">Weight_(kg)</th>
+                <th scope="col">Seal_No.</th>
+                <th scope="col">Local_Delivery</th>
+                <th scope="col">Status</th>
+                <th scope="col">Return</th>
+                <th scope="col">Close</th>
+                {{!-- <th scope="col">Delete</th> --}}
+                {{!-- <th scope="col">Delete</th> --}}
+                <th scope="col">Edit</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              {{#each deliveryOrder}}
+              <tr style="text-transform: uppercase">
+                {{!-- <td>{{this.id}}</td> --}}
+                <td>{{this.BL}}</td>
+                <td>{{this.Terminal_Name}}</td>
+                <td>{{this.Container_No}}</td>
+                <td>{{this.Vassel_No}}</td>
+                <td>{{this.ETA}}</td>
+                <td>{{this.Weight}}</td>
+                <td>{{this.Seal_No}}</td>
+                <td>{{this.Delivery_Location}}</td>
+                <td>{{this.Status_}}</td>
+                <td>{{this.Return_}}</td>
+                <td>{{this.Close_}}</td>
+                {{!-- <td><button data-planid="{{this.id}}" class="delplan">Delete</button></td> --}}
+                {{!-- <td><a href="delete/{{this.id}}">Delete</a></td> --}}
+                <td><a href="order/{{this.id}}">Edit</a></td>
+              </tr>
+              {{/each}}
+            </tbody>
+
+          </table>
+
+        </form>
+        <!--END OF FORM ^^-->
+      </fieldset>
+    
+    <hr />
+  </div>
+
+
+{{!-- <div class="formDiv">
+  <h4>Create New</h4>
+  <form id="createplan">
+    <div class="form-group-sm row">
+      <div class="col-sm">
+        <label for="ex1">B/L</label>
+        <input class="form-control form-control-sm" placeholder="BL" name="BL" id="BL" required style="text-transform: uppercase">
+      </div>
+      <div class="col">
+        <label for="ex2">Terminal_Name</label>
+        <input class="form-control form-control-sm" placeholder="Terminal Name" name="Terminal_Name" id="Terminal_Name" required style="text-transform: uppercase">
+      </div>
+      <div class="col">
+        <label for="ex3">Container_No.</label>
+        <input class="form-control form-control-sm" placeholder="Container No." name="Container_No" id="Container_No" required style="text-transform: uppercase">
+      </div>
+      <div class="col">
+        <label for="ex1">Vassel_No.</label>
+        <input class="form-control form-control-sm" placeholder="Vassel No." name="Vassel_No" id="Vassel_No" required style="text-transform: uppercase">
+      </div>
+      <div class="col">
+        <label for="ex2">ETA</label>
+        <input type="date" class="form-control form-control-sm" placeholder="ETA" name="ETA" id="ETA" required style="text-transform: uppercase">
+      </div>
+      <div class="col">
+        <label for="ex3">Weight_(kg)</label>
+        <input type="number" step="0.001" name="amount" placeholder="0.000" class="form-control form-control-sm"
+          name="Weight" id="Weight" required style="text-transform: uppercase">
+      </div>
+      <div class="col">
+        <label for="ex1">Seal_No.</label>
+        <input class="form-control form-control-sm" placeholder="Seal No." name="Seal_No" id="Seal_No" required style="text-transform: uppercase">
+      </div>
+      <div class="col">
+        <label for="ex2">Local_Delivery</label>
+        <input class="form-control form-control-sm" placeholder="Local Delivery" name="Delivery_Location"
+          id="Delivery_Location" required style="text-transform: uppercase">
+      </div>
+      <div class="col">
+        <label for="ex3">Status</label>
+        <select class="form-control form-control-sm" name="Status_" id="Status_" required style="text-transform: uppercase">
+          <option selected>Choose...</option>
+          <option>Done</option>
+          <option>Pending</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="ex1">Return</label>
+        <select class="form-control form-control-sm" name="Return_" id="Return_" required style="text-transform: uppercase">
+          <option selected>Choose...</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="ex2">Close</label>
+        <select class="form-control form-control-sm" name="Close_" id="Close_" required style="text-transform: uppercase">
+          <option selected>Choose...</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+          <button type="submit" class="btn btn-secondary btn-sm" style="margin-top: 25px">Save</button>
+    </div>
+  </form>
+  <br>
+  <hr>
+</div> --}}
+
+
+
+</div>
+
+
+
+
+<script type="text/javascript">
+
+{{!-- Table Bootstrap --}}
+  $(document).ready(function () {
+    $('#example').DataTable();
+  });
+
+
+ $("#createplan").on("submit", function (event) {
+    // Make sure to preventDefault on a submit event.
+    event.preventDefault();
+
+    var newPlan = {
+      BL: $("#BL").val().trim(),
+      Terminal_Name: $("#Terminal_Name").val().trim(),
+      Container_No: $("#Container_No").val().trim(),
+      Vassel_No: $("#Vassel_No").val().trim(),
+      ETA: $("#ETA").val().trim(),
+      Weight: $("#Weight").val().trim(),
+      Seal_No: $("#Seal_No").val().trim(),
+      Delivery_Location: $("#Delivery_Location").val().trim(),
+      Status_: $("#Status_").val().trim(),
+      Return_: $("#Return_").val().trim(),
+      Close_: $("#Close_").val().trim(),
+
+    };
+
+    // Send the POST request.
+    $.ajax("/todos", {
+      type: "POST",
+      data: newPlan
+    }).then(
+      function () {
+        console.log("created new plan");
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
+  });
+
+
+{{!-- Delete Order --}}
+  {{!-- $(".delplan").on("click", function (event) {
+    var id = $(this).data("planid");
+    // Send the DELETE request.
+    $.ajax("/todos/" + id, {
+      type: "DELETE"
+    }).then(
+      function () {
+        console.log("deleted id ", id);
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
+  }); --}}
+  
+
+</script>
