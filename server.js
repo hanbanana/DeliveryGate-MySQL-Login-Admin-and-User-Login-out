@@ -75,13 +75,13 @@ app.post('/auth', function (request, response) {
   var username = request.body.username;
   var password = request.body.password;
  
-      if (username === "user1" || password === "user1") {
+      if (username === "user1" && password === "user1") {
         request.session.customer= true;
         request.session.user = "user1";
         
         response.redirect('/customer');
       } 
-     else if (username === "admin1" || password === "admin1") {
+     else if (username === "admin1" && password === "admin1") {
         request.session.admin= true;
         request.session.user = "admin1";
         
