@@ -17,8 +17,8 @@ Delivery_Location varchar(255) NOT NULL,
 Status_ VARCHAR(50) NOT NULL,
 Return_ varchar(255) NOT NULL,
 Close_ VARCHAR(50) NOT NULL,
-Created TIMESTAMP NOT NULL,
-Updated_ DATETIME NOT NULL,
+Created DATETIME NOT NULL,
+Updated_ TIMESTAMP NOT NULL,
 PRIMARY KEY (id)
 );
 
